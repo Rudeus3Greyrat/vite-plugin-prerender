@@ -1,6 +1,6 @@
 # vite-plugin-prerender
 
-[![npm][npm-img]][npm-url] [![github][github-img]][github-url] [![license][license-img]][license-url]
+[![npm][npm-img]][npm-url] [![downloads][downloads-img]][downloads-url] [![github][github-img]][github-url] [![license][license-img]][license-url]
 
 _Flexible, framework-agnostic static site generation for sites and SPAs built with Vite._
 
@@ -253,6 +253,8 @@ MIT
 
 [npm-img]: https://img.shields.io/npm/v/vite-plugin-prerender.svg
 [npm-url]: https://www.npmjs.com/package/vite-plugin-prerender
+[downloads-img]: https://img.shields.io/npm/dw/vite-plugin-prerender
+[downloads-url]: https://www.npmjs.com/package/vite-plugin-prerender
 [github-img]: https://img.shields.io/github/stars/Rudeus3Greyrat/vite-plugin-prerender
 [github-url]: https://github.com/Rudeus3Greyrat/vite-plugin-prerender
 [license-img]: https://img.shields.io/npm/l/vite-plugin-prerender
