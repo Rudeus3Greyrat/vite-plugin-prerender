@@ -1,0 +1,60 @@
+{
+  "name": "vite-plugin-prerender-monorepo",
+  "private": "false",
+  "version": "0.0.1",
+  "description": "Flexible, framework-agnostic static site generation for sites and SPAs built with vite.",
+  "license": "MIT",
+  "author": "Rudeus3Greyrat",
+  "scripts": {
+    "stub": "pnpm run prepack --filter ./packages -- --stub",
+    "postinstall": "pnpm run stub",
+    "log": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "lint:pretty": "pretty-quick --staged",
+    "lint:eslint": "eslint \"packages/**/*.{ts,tsx}\" --fix",
+    "prepare": "husky install",
+    "preinstall": "npx only-allow pnpm",
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rudeus3Greyrat/vite-plugin-prerender"
+  },
+  "bugs": {
+    "url": "hhttps://github.com/Rudeus3Greyrat/vite-plugin-prerender/issues"
+  },
+  "homepage": "https://github.com/Rudeus3Greyrat/vite-plugin-prerender/tree/master/#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^16.1.0",
+    "@commitlint/config-conventional": "^16.0.0",
+    "@types/html-minifier-terser": "^6.1.0",
+    "@types/jsdom": "^16.2.14",
+    "@types/node": "^17.0.13",
+    "@typescript-eslint/eslint-plugin": "^5.10.1",
+    "@typescript-eslint/parser": "^5.10.1",
+    "commitizen": "^4.2.4",
+    "conventional-changelog-cli": "^2.2.2",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.7.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-html": "^6.2.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.2",
+    "prettier": "^2.5.1",
+    "tsup": "^5.11.11",
+    "typescript": "^4.5.5",
+    "unbuild": "^0.6.9",
+    "vite": "^2.7.13",
+    "vitest": "^0.2.5"
+  },
+  "lint-staged": {
+    "*": [
+      "prettier --write --ignore-unknown"
+    ],
+    "packages/*/{src,types}/**/*.ts": [
+      "eslint --ext .ts"
+    ],
+    "packages/**/*.d.ts": [
+      "eslint --ext .ts"
+    ]
+  }
+}
