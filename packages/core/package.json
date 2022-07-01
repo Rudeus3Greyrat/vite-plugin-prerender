@@ -1,0 +1,55 @@
+{
+  "name": "vite-plugin-prerender",
+  "version": "1.0.3",
+  "description": "Flexible, framework-agnostic static site generation for sites and SPAs built with vite.",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "license": "MIT",
+  "author": "Rudeus3Greyrat",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "pnpm unbuild --stub",
+    "build": "pnpm unbuild"
+  },
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "prerender",
+    "Rudeus3Greyrat"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rudeus3Greyrat/vite-plugin-prerender",
+    "directory": "packages/core"
+  },
+  "bugs": {
+    "url": "https://github.com/Rudeus3Greyrat/vite-plugin-prerender/issues"
+  },
+  "homepage": "https://github.com/Rudeus3Greyrat/vite-plugin-prerender/tree/master/#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "debug": "^4.3.3",
+    "@prerenderer/prerenderer": "^0.7.2",
+    "@prerenderer/renderer-puppeteer": "^0.2.0",
+    "html-minifier": "^3.5.16",
+    "mkdirp": "^1.0.4"
+  },
+  "peerDependencies": {
+    "vite": ">=2.0.0"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.7",
+    "@types/node": "^17.0.13",
+    "@types/puppeteer": "^5.4.6"
+  }
+}
