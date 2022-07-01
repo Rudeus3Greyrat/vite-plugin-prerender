@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/../vite-plugin-prerender/.idea/vite-plugin-prerender.iml" filepath="$PROJECT_DIR$/../vite-plugin-prerender/.idea/vite-plugin-prerender.iml" />
-    </modules>
-  </component>
-</project>
