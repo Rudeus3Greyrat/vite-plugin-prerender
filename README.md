@@ -23,7 +23,7 @@ yarn add vite-plugin-prerender -D
 or
 
 ```
-npm i vite-plugin-compression -D
+npm i vite-plugin-prerender -D
 ```
 
 ## Basic Usage (`vite.config.js`)
