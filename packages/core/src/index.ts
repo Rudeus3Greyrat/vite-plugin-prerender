@@ -122,9 +122,7 @@ const emitRendered=(options)=>{
         .then(renderedRoutes => {
             if(options.postProcess){
                 console.log(chalk.cyan(`[vite-plugin-prerender] Postprocessing rendered html files...`))
-                return Promise.all(renderedRoutes.map(renderedRoute => {
-                    options.postProcess(renderedRoute)
-                }))
+                return Promise.all(renderedRoutes.map(renderedRoute =>options.postProcess(renderedRoute)))
             }else{
                 return renderedRoutes
             }
