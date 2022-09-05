@@ -4,7 +4,7 @@
   "private": "false",
   "scripts": {
     "dev": "vite",
-    "build": "vite build ",
+    "build": "vite build",
     "test:gzip": "npm run build && http-server dist --cors --gzip -c-1",
     "test:br": "npm run build && http-server dist --cors --brotli -c-1"
   },
