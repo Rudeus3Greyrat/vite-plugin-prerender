@@ -37,7 +37,7 @@ function vitePrerender(options: VitePluginPrerender): Plugin {
         : path.join(config.root, config.build.outDir)
       debug('resolvedConfig:', resolvedConfig)
     },
-    async writeBundle(options,bundle){
+    async closeBundle(options,bundle){
       await emitRendered(_options)
     }
   }
